@@ -4,4 +4,33 @@
   <h1>Admin &raquo; All Categories</h1>
 </header>
 
+<div class="well">
+  <%= link_to '+ New Category', [:new, :admin, :category], class: 'btn btn-info' %>
+</div>
+
+<div class="panel panel-default products">
+
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Category</th>
+        <th>Number of products</th>
+        <th>Link</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @categories.each do |category| %>
+        <tr>
+          <td><%= category.id %></td>
+          <td><%= category.name %></td>
+          <td><%= category.products.length %></td>
+          <td><a href=<%= "/categories/#{category.id}" %> class="btn btn-primary"><%= category.name %></a></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+</div>
+
 </section>
