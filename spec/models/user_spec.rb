@@ -37,4 +37,11 @@ RSpec.describe User, type: :model do
       end
     end
   end
+  describe '.authenticate_with_credentials' do
+    it "should pass if email and password matches" do
+      @user = User.new({:name => "name", :email => "email", :password => "password", :password_confirmation => "password"})
+      @user.save!
+      expect(User.authenticate_with_credentials("email", "password")).to be(@user)
+    end
+  end
 end
