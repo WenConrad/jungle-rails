@@ -3,8 +3,8 @@ class User < ActiveRecord::Base
   has_secure_password
 
   def self.authenticate_with_credentials(email, password)
-    user = self.find_by_email(params[:email])
-    user.authenticate(params[:password])
+    user = self.find_by_email(email.strip.downcase)
+    user.authenticate(password)
   end
 
   validates :name, presence: true
