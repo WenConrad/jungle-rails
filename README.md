@@ -5,13 +5,16 @@ A mini e-commerce application built with Rails 4.2 for purposes of teaching Rail
 ## Final Product
 
 !["Screenshot of main page showing products"](https://raw.githubusercontent.com/WenConrad/jungle-rails/master/docs/main-page.png)
-###Home Page
+
+### Home Page
 
 !["Screenshot of user login page"](https://raw.githubusercontent.com/WenConrad/jungle-rails/master/docs/login-page.png)
-###Login Page
+
+### Login Page
 
 !["Screenshot of admin page for categories"](https://raw.githubusercontent.com/WenConrad/jungle-rails/master/docs/admin-category.png)
-###Admin Page
+
+### Admin Page
 
 ## Additional Steps for Apple M1 Machines
 
